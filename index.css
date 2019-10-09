@@ -1,0 +1,17 @@
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+.content {
+  margin-bottom: 100px;
+}

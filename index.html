@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Protocolos para Redes Ad Hoc - Redes 2</title>
+  </head>
+  <body>
+<body>
+
+<!-- Navbar --> 
+
+  <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
+    <a class="navbar-brand" href="#">Redes Ad Hoc</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#adhoc">Introdução <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#motivacao">Motivação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#comofuncionam">Como funcionam</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#protocolos">Principais protocolos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resumo">Resumo de outros protocolos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#conclusoes">Considerações Finais</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#perguntas">Perguntas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#bibliografia">Bibliografia</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Inicio --> 
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container content" id="adhoc">
+      <h1 class="display-4 title">Redes Ad hoc</h1>
+      <p class="lead">
+          Uma rede ad hoc é uma rede composta por dispositivos individuais que se comunicam diretamente. O termo implica construção espontânea ou improvisada, porque essas redes geralmente ignoram o hardware de gatekeeper ou o ponto de acesso central, como um roteador. Muitas redes ad hoc são redes locais em que computadores ou outros dispositivos estão habilitados para enviar dados diretamente um para o outro, em vez de passar por um ponto de acesso centralizado.
+
+      </p>
+    </div>
+  
+  <!-- Motivação --> 
+  <hr class="my-4" id="motivacao">
+    <div class="container content" >
+      <h1 class="display-4 title">Motivação</h1>
+      <li class="h5">
+          Como Surgiu
+      </li>
+            <li class="h5">
+                O que resolve (Aplicações)
+            </li>
+            <p class="lead">
+                A idéia de uma rede ad hoc geralmente não é familiar para os usuários finais que só viram pequenas redes residenciais ou comerciais que usam um roteador típico para enviar sinais sem fio para computadores individuais. No entanto, a rede ad hoc está sendo usada bastante em novos tipos de engenharia sem fio, embora até recentemente fosse uma idéia bastante esotérica. Por exemplo, uma rede móvel ad hoc envolve dispositivos móveis se comunicando diretamente entre si. Outro tipo de rede ad hoc, a rede veicular ad hoc, envolve a colocação de dispositivos de comunicação nos carros. Ambos são exemplos de redes ad hoc que usam uma grande coleção de dispositivos individuais para se comunicar livremente sem um tipo de estrutura de comunicação hierárquica ou de cima para baixo.
+            </p>
+            <li class="h5">
+                Redes ad hoc móveis  (MANETs)
+            </li>
+            <p class="lead">
+            Uma rede móvel ad hoc (MANET) é uma rede continuamente auto configurável, auto-organizada e sem infraestrutura de dispositivos móveis conectados sem fios. Às vezes, é conhecido como redes "on-the-fly" ou "redes espontâneas".
+            </p>
+            <li class="h5">
+                Redes ad hoc veiculares (VANETs)
+            </li>
+            <li class="h5">
+                Redes ad hoc de smartphone (SPANs)
+            </li>
+            <li class="h5">
+                Redes de malha sem fio
+            </li>
+            <li class="h5">
+                Aplicações militares
+            </li>
+            <li class="h5">
+                Redes de sensores sem fio
+            </li>
+            <li class="h5">
+                Ad hoc para Iluminação inteligente de casas
+            </li>
+            <li class="h5">
+                Rede ad hoc de resgate em desastres
+            </li>
+            <li class="h5">
+                Rede ad hoc para hospitais
+            </li>
+          <li class="h5">
+              Classificações
+          </li>
+          <li class="h5">
+              Desafios
+          </li>
+          <p class="lead">
+              A idéia de uma rede ad hoc geralmente não é familiar para os usuários finais que só viram pequenas redes residenciais ou comerciais que usam um roteador típico para enviar sinais sem fio para computadores individuais. No entanto, a rede ad hoc está sendo usada bastante em novos tipos de engenharia sem fio, embora até recentemente fosse uma idéia bastante esotérica. Por exemplo, uma rede móvel ad hoc envolve dispositivos móveis se comunicando diretamente entre si. Outro tipo de rede ad hoc, a rede veicular ad hoc, envolve a colocação de dispositivos de comunicação nos carros. Ambos são exemplos de redes ad hoc que usam uma grande coleção de dispositivos individuais para se comunicar livremente sem um tipo de estrutura de comunicação hierárquica ou de cima para baixo.
+            </p>
+            <p class="lead">
+                Vantagens para os usuários: Rede de alto desempenho. Nenhuma infraestrutura cara deve ser instalada. Distribuição rápida de informações pelo remetente. Nenhum ponto único de falha. Escalabilidade e restrições de bateria.
+              </p>
+            <p class="lead">
+                Dificuldades de implementação: Todas as entidades de rede podem ser móveis, portanto, é necessária uma topologia muito dinâmica. As funções de rede devem ter um alto grau de adaptabilidade. Não há entidades centrais, portanto, as operações devem ser gerenciadas de maneira completamente distribuída.
+              </p>
+            <p class="lead">
+                Como efeitos colaterais, o uso de espectro de frequência não licenciado, contribuindo para a poluição do espectro radioelétrico.
+            </p>
+            <p class="lead">
+                Especialistas apontam que, para pequenas redes de área local, as redes ad hoc podem ser mais baratas de serem construídas porque não exigem tanto hardware. No entanto, outros afirmam que pode ser difícil gerenciar um grande número de dispositivos sem uma infraestrutura maior e mais concreta. Os líderes técnicos estão procurando maneiras de habilitar funcionalidades de rede mais vibrantes com essas redes ponto a ponto.
+            </p>
+        </li>
+    </div>
+
+  <!-- Como funcionam as redes ad hoc e os seus protocolos de roteamento --> 
+
+  <hr class="my-4" id="comofuncionam">
+    <div class="container content">
+      <h1 class="display-4 title">Como funcionam as redes ad hoc e os seus protocolos de roteamento</h1>
+
+    </div>
+
+    <!-- Principais protocolos: --> 
+
+    <hr class="my-4" id="protocolos">
+    <div class="container content">
+        <h1 class="display-4 title">Principais protocolos</h1>
+    </div>
+
+  <!-- Resumo de outros protocolos --> 
+
+  <hr class="my-4" id="resumo">
+    <div class="container content">
+      <h1 class="display-4 title">Resumo de outros protocolos</h1>
+    </div>
+
+  <!-- Considerações Finais --> 
+
+<hr class="my-4" id="conclusoes">
+    <div class="container content">
+      <h1 class="display-4 title">Considerações Finais</h1>
+    </div>
+
+      <!-- Perguntas --> 
+
+  <hr class="my-4" id="perguntas">
+  <div class="container content">
+      <h1 class="display-4 title">Perguntas</h1>
+
+  </div>
+
+
+    <!-- Bibliografia  --> 
+
+  <hr class="my-4" id="bibliografia">
+    <div class="container content">
+      <h1 class="display-4 title">Bibliografia</h1>
+      <ul style="list-style: none;">
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-- Informações do Grupo --> 
+  <div class="jumbotron jumbotron-fluid bg-dark text-light">
+    <div class="container content">
+    UFRJ - Redes de Computadores II - Segundo semestre de 2019
+    Alunos
+Renan Neri e Ary Andrade
+
+  
+Tema
+Redes Ad Hoc
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
