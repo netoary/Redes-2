@@ -29,13 +29,10 @@
           <a class="nav-link" href="#motivacao">Motivação</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#comofuncionam">Como funcionam</a>
+          <a class="nav-link" href="#comofuncionam">Dificuldade de Roteamento</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#protocolos">Principais protocolos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#resumo">Resumo de outros protocolos</a>
+          <a class="nav-link" href="#protocolos">Protocolos</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#conclusoes">Considerações Finais</a>
@@ -132,22 +129,89 @@
 
   <hr class="my-4" id="comofuncionam">
     <div class="container content">
-      <h1 class="display-4 title">Como funcionam as redes ad hoc e os seus protocolos de roteamento</h1>
-
+      <h1 class="display-4 title">Dificuldades de Roteamento</h1>
+      <p class="lead">
+        Roteamento é o processo de encontrar rota ou caminho. Nesse processo um tabela que contém a origem, o destino é utilizada. O nó deseja enviar o pacote para o destino e precisa do protocolo de roteamento devido à alteração dinâmica da topologia de redes Ad Hoc.
+        As principais dificuldades no roteamento são:
+      <!--IMPORTANTE --> 
+      <!-- Pesquisar sobre essas dificuldades e explicar!--> 
+      <li class="h5">
+        Links assimétricos
+      </li>
+      
+      <li class="h5">
+        Link redundante
+      </li>
+      <li class="h5">
+        Interferência
+      </li>
+      <li class="h5">
+        Topologia dinâmica
+      </li>
+      </p>
     </div>
 
     <!-- Principais protocolos: --> 
 
     <hr class="my-4" id="protocolos">
     <div class="container content">
-        <h1 class="display-4 title">Principais protocolos</h1>
-    </div>
+        <h1 class="display-4 title">Protocolos</h1>
+        <h3>Protocolos proativos de roteamento</h3>
+        <p class="lead">
+          Os protocolos de roteamento proativo também são chamados de protocolos de roteamento acionados por tabela. Neste, todos os nós mantêm a tabela de roteamento que contém informações sobre a topologia de rede, mesmo sem a necessidade.
+        </p>
+        <li class="h5">Protocolo de roteamento vetor de distância de sequência de destino dinâmico (DSDV)</li>
+        <p class="lead">
+          É um aprimoramento do roteamento de vetor de distância para redes ad hoc. Este protocolo consiste em dois fatores que são numeração de sequência e amortecimento.<br /><br />
 
-  <!-- Resumo de outros protocolos --> 
+          Numeração de sequência (Sequence numbering): cada nó da rede mantém uma tabela de roteamento. A tabela de roteamento contém uma lista de todas as fontes e destinos disponíveis e os caminhos possíveis. Cada entrada na tabela é diferente pelo número de sequência para evitar loops e inconsistências. <br />
 
-  <hr class="my-4" id="resumo">
-    <div class="container content">
-      <h1 class="display-4 title">Resumo de outros protocolos</h1>
+          Amortecimento (Damping): significa anunciar. Cada nó deve anunciar sua tabela de roteamento para seus vizinhos atuais por broadcasting???(COMO TRADUZIR). Os nós vizinhos sabem que há alterações na rede pelo Damping. As atualizações de roteamento são enviadas de duas maneiras: despejo completo e incremental. O despejo completo a tabela completa é enviada aos vizinhos. E o chamado incrementais somente as entradas são enviadas aos vizinhos.
+        </p>
+        <li class="h5">Protocolo de roteamento sem fio (WRP)</li>
+        <p class="lead">
+          O WRP é um protocolo de roteamento proativo, pois mantém quatro itens que são: 1) Uma tabela de distância 2) Uma tabela de roteamento 3) Uma tabela de custo de link 4) Uma lista de transmissão de mensagens (MRL) para evitar um loop de roteamento temporário. <br />
+          O WRP usa a transmissão de mensagens de atualização para os nós vizinhos. Se o nó tiver atualização, deve enviar confirmações. Se o nó não tiver alterações na última atualização, envie um hello ocioso para garantir a conectividade. Um nó decide apenas se deseja atualizar ou não após receber a mensagem de atualização do vizinho. Este protocolo também procura o melhor caminho. Se um nó obtiver o melhor caminho, retransmitir essas informações para os nós originais. Depois que o nó original recebe uma confirmação, ele atualiza seu MRL.
+        </p>
+        <h3>Protocolos de roteamento reativo</h3>
+        <p class="lead">
+          O protocolo de roteamento reativo também é conhecido como protocolo de roteamento sob demanda. Nesse protocolo, a rota é descoberta ou criada sempre que necessário. <br />
+
+          Descoberta de rota: nesta fase, o nó de origem inicia o processo de descoberta de rota. O nó de origem inclui o endereço de destino, nós intermediários para o destino no pacote.<br />
+
+          Manutenção de rota: devido à falha na rota entre os nós, que ocorre devido à quebra do link. Portanto, a manutenção da rota é feita por mecanismo de reconhecimento.
+        </p>
+        <li class="h5">Roteamento Dinâmico de Origem (DSR)</li>
+        <p class="lead">
+          O DSR é um protocolo reativo para iniciar o processo de descoberta de rotas por fonte. O nó de origem decide apenas a rota da origem para o destino e os nós intermediários também. É um protocolo sem farol no qual nenhuma mensagem HELLO é trocada entre nós para notificá-los de seus vizinhos na rede [1].
+        </p>
+        <li class="h5">Roteamento Ad Hoc Sob Demanda Vetor de Distância (AODV)</li>
+        <p class="lead">
+          O AODV é um protocolo reativo e é uma melhoria do DSDV em vez do protocolo proativo. No AODV, se o nó que deseja uma conexão transmite uma solicitação (RREQ).
+
+          O nó de origem transmite um RREQ pela rede como o processo de descoberta de rota. Se um nó de destino receber RREQ, ele enviará uma resposta de rota (RREP). Se, em caso de falha, retransmitir o RREQ. Se o nó descartar RREQ que já possuía. A principal diferença entre DSR e AODV, o DSR, usa o roteamento iniciado pela origem e não possui nós intermediários para escolher o endereço do próximo salto. No AODV, os nós intermediários escolherão o endereço do próximo salto.
+        </p>
+        <h3>Protocolo de roteamento híbrido</h3>
+        <p class="lead">
+          Protocolo de roteamento híbrido é a combinação de protocolos de roteamento proativo e reativo.
+        </p>
+        <li class="h5"> Protocolo de Roteamento de Região (ZRP)</li>
+        <p class="lead">
+          É mais adequado para grandes extensões e diversos padrões de mobilidade. No ZRP, zona de roteamento significa que cada nó na rede mantém proativamente mantém rotas dentro de uma região local. O mecanismo QUERY-REPLY é usado para criação de rota. Se for o destino de um pacote na mesma zona, a tabela de roteamento já armazenada será usada imediatamente pelo protocolo proativo. Se for o destino de um pacote em outra zona, um roteamento é feito por protocolo reativo. Simplesmente, se o destino cair na mesma região, o protocolo proativo será usado. Se o destino cair em uma região diferente, o protocolo reativo será usado. As informações de descoberta de vizinhos são usadas como base para o IARP (Intra-zone Routing Protocol).
+        </p>
+        <li class="h5"> Protocolo de Roteamento Adaptativo Híbrido Sharp (SHARP)</li>
+        <p class="lead">
+          O SHARP se adapta entre o roteamento reativo e proativo, variando dinamicamente a quantidade de informações de roteamento compartilhadas proativamente. A zona proativa consiste no nó determinado pelo raio da zona para se tornar esses nós membros de uma zona proativa específica. Para descobrir uma rota quando não há destino dentro da zona proativa por protocolo reativo. As zonas proativas atuam como coletores de pacotes, que encaminham os pacotes de maneira eficiente para o destino, uma vez que os pacotes atingem qualquer nó na vizinhança da zona.
+        </p>
+
+        <li class="h5">Intermediate System to Intermediate System (IS-IS)</li>
+        <p class="lead">
+          NÂO SEI EM QUAL ENTRA, e falta escrever https://en.wikipedia.org/wiki/IS-IS
+        </p>
+        <li class="h5">Optimized Link State Routing Protocol (OLSR)</li>
+        <p class="lead">
+          NÂO SEI EM QUAL ENTRA, e falta escrever https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol
+        </p>
     </div>
 
   <!-- Considerações Finais --> 
