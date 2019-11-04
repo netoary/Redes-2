@@ -23,13 +23,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#adhoc">Resumo <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#resumo">Resumo <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#intro">Introdução <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#motivacao">Motivação</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#comofuncionam">Dificuldade de Roteamento</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#protocolos">Protocolos</a>
@@ -65,11 +65,17 @@
     </div>
 
 
-    <div class="container content" id="adhoc">
+    <div class="container content" id="resumo">
       <h1 class="display-4 title">Resumo</h1>
       <p class="lead">
-          Uma rede ad hoc é uma rede composta por dispositivos individuais que se comunicam diretamente. O termo implica construção espontânea ou improvisada, porque essas redes geralmente ignoram o hardware de gatekeeper ou o ponto de acesso central, como um roteador. Muitas redes ad hoc são redes locais em que computadores ou outros dispositivos estão habilitados para enviar dados diretamente um para o outro, em vez de passar por um ponto de acesso centralizado.
+        O presente trabalho versa sobre Redes Ad Hoc. Nesta pesquisa, pretende-se discutir história, aplicações, dificuldades e principais protocolos. Esta investigação constitui do trabalho da disciplina de Redes de Computadores 2 (EEL879) e diante da sobrecarga de conteúdos existentes e descritos em diferentes padrões, foi observada a necessidade de organizar e descrever. Foram analisados artigos científicos e sites disponíveis pela internet que possibilitaram o crescimento do conhecimento da turma sobre este tema. Para pequenas redes de área local, as redes ad hoc podem ser mais baratas de serem construídas porque não exigem tanto hardware. No entanto, pode ser difícil gerenciar um grande número de dispositivos sem uma infraestrutura maior e mais concreta.
+      </p>
+    </div>
 
+    <div class="container content" id="intro">
+      <h1 class="display-4 title">Introdução</h1>
+      <p class="lead">
+        Uma rede ad hoc é uma rede composta por dispositivos individuais que se comunicam diretamente. O termo implica construção espontânea ou improvisada, porque essas redes geralmente ignoram o hardware de gatekeeper ou o ponto de acesso central, como um roteador. Muitas redes ad hoc são redes locais em que computadores ou outros dispositivos estão habilitados para enviar dados diretamente um para o outro, em vez de passar por um ponto de acesso centralizado.
       </p>
     </div>
   
@@ -77,163 +83,161 @@
   <hr class="my-4" id="motivacao">
     <div class="container content" >
       <h1 class="display-4 title">Motivação</h1>
-      <li class="h5">
-          Como Surgiu
-      </li>
-            <li class="h5">
-                O que resolve (Aplicações)
-            </li>
-            <p class="lead">
-                A idéia de uma rede ad hoc geralmente não é familiar para os usuários finais que só viram pequenas redes residenciais ou comerciais que usam um roteador típico para enviar sinais sem fio para computadores individuais. No entanto, a rede ad hoc está sendo usada bastante em novos tipos de engenharia sem fio, embora até recentemente fosse uma idéia bastante esotérica. Por exemplo, uma rede móvel ad hoc envolve dispositivos móveis se comunicando diretamente entre si. Outro tipo de rede ad hoc, a rede veicular ad hoc, envolve a colocação de dispositivos de comunicação nos carros. Ambos são exemplos de redes ad hoc que usam uma grande coleção de dispositivos individuais para se comunicar livremente sem um tipo de estrutura de comunicação hierárquica ou de cima para baixo.
-            </p>
-            <li class="h5">
-                Redes ad hoc móveis  (MANETs)
-            </li>
-            <p class="lead">
-            Uma rede móvel ad hoc (MANET) é uma rede continuamente auto configurável, auto-organizada e sem infraestrutura de dispositivos móveis conectados sem fios. Às vezes, é conhecido como redes "on-the-fly" ou "redes espontâneas".
-            </p>
-            <li class="h5">
-                Redes ad hoc veiculares (VANETs)
-            </li>
-            <li class="h5">
-                Redes ad hoc de smartphone (SPANs)
-            </li>
-            <li class="h5">
-                Redes de malha sem fio
-            </li>
-            <li class="h5">
-                Aplicações militares
-            </li>
-            <li class="h5">
-                Redes de sensores sem fio
-            </li>
-            <li class="h5">
-                Ad hoc para Iluminação inteligente de casas
-            </li>
-            <li class="h5">
-                Rede ad hoc de resgate em desastres
-            </li>
-            <li class="h5">
-                Rede ad hoc para hospitais
-            </li>
-          <li class="h5">
-              Classificações
-          </li>
-          <li class="h5">
-              Desafios
-          </li>
-          <p class="lead">
-              A idéia de uma rede ad hoc geralmente não é familiar para os usuários finais que só viram pequenas redes residenciais ou comerciais que usam um roteador típico para enviar sinais sem fio para computadores individuais. No entanto, a rede ad hoc está sendo usada bastante em novos tipos de engenharia sem fio, embora até recentemente fosse uma idéia bastante esotérica. Por exemplo, uma rede móvel ad hoc envolve dispositivos móveis se comunicando diretamente entre si. Outro tipo de rede ad hoc, a rede veicular ad hoc, envolve a colocação de dispositivos de comunicação nos carros. Ambos são exemplos de redes ad hoc que usam uma grande coleção de dispositivos individuais para se comunicar livremente sem um tipo de estrutura de comunicação hierárquica ou de cima para baixo.
-            </p>
-            <p class="lead">
-                Vantagens para os usuários: Rede de alto desempenho. Nenhuma infraestrutura cara deve ser instalada. Distribuição rápida de informações pelo remetente. Nenhum ponto único de falha. Escalabilidade e restrições de bateria.
-              </p>
-            <p class="lead">
-                Dificuldades de implementação: Todas as entidades de rede podem ser móveis, portanto, é necessária uma topologia muito dinâmica. As funções de rede devem ter um alto grau de adaptabilidade. Não há entidades centrais, portanto, as operações devem ser gerenciadas de maneira completamente distribuída.
-              </p>
-            <p class="lead">
-                Como efeitos colaterais, o uso de espectro de frequência não licenciado, contribuindo para a poluição do espectro radioelétrico.
-            </p>
-            <p class="lead">
-                Especialistas apontam que, para pequenas redes de área local, as redes ad hoc podem ser mais baratas de serem construídas porque não exigem tanto hardware. No entanto, outros afirmam que pode ser difícil gerenciar um grande número de dispositivos sem uma infraestrutura maior e mais concreta. Os líderes técnicos estão procurando maneiras de habilitar funcionalidades de rede mais vibrantes com essas redes ponto a ponto.
-            </p>
-        </li>
-    </div>
-
-  <!-- Como funcionam as redes ad hoc e os seus protocolos de roteamento --> 
-
-  <hr class="my-4" id="comofuncionam">
-    <div class="container content">
-      <h1 class="display-4 title">Dificuldades de Roteamento</h1>
+      <h3>
+        História
+      </h3>
       <p class="lead">
-        Roteamento é o processo de encontrar rota ou caminho. Nesse processo um tabela que contém a origem, o destino é utilizada. O nó deseja enviar o pacote para o destino e precisa do protocolo de roteamento devido à alteração dinâmica da topologia de redes Ad Hoc.
-        As principais dificuldades no roteamento são:
-      <!--IMPORTANTE --> 
-      <!-- Pesquisar sobre essas dificuldades e explicar!--> 
-      <li class="h5">
-        Links assimétricos
-      </li>
-      
-      <li class="h5">
-        Link redundante
-      </li>
-      <li class="h5">
-        Interferência
-      </li>
-      <li class="h5">
-        Topologia dinâmica
-      </li>
+        Em 1970 temos o desenvolvimento da primeira tecnologia que posteriormente viria a se caracterizar como uma rede Ad Hoc, sendo financiada pela Defense Advanced Research Projects Agency (DARPA). A Packet Radio Network (PRNET), como era chamada, foi desenvolvida usando radiocomunicação comutada por pacotes para prover uma rede móvel no campo de batalha sem infraestrutura e em ambiente hostil (aviões, soldados e tanques). Posteriormente nos anos 80 o projeto expandiu para Survivable Adaptive Radio Network (SURAN). mantendo o mesmo propósito. 
+O começo dos anos 90 marcam uma nova fase do desenvolvimento de redes Ad Hoc, com a popularização de Notebooks, o uso de softwares open-source e equipamentos de comunicação baseado em radiofrequência e infravermelho. Nessa época o termo Redes Ad Hoc é adotado pelo IEEE 802.11, além do expansão do uso dessa tecnologia para fins não militares.
+
       </p>
+      <h3>
+        Aplicações
+      </h3>
+      <p class="lead">
+        A idéia de uma rede ad hoc geralmente não é familiar para os usuários finais que só viram pequenas redes residenciais ou comerciais que usam um roteador típico para enviar sinais sem fio para computadores individuais. No entanto, a rede ad hoc está sendo usada bastante em novos tipos de engenharia sem fio, embora até recentemente fosse uma idéia bastante esotérica. Por exemplo, uma rede móvel ad hoc envolve dispositivos móveis se comunicando diretamente entre si. Outro tipo de rede ad hoc, a rede veicular ad hoc, envolve a colocação de dispositivos de comunicação nos carros. Ambos são exemplos de redes ad hoc que usam uma grande coleção de dispositivos individuais para se comunicar livremente sem um tipo de estrutura de comunicação hierárquica ou de cima para baixo.
+      </p>
+      <ul>
+      <li>Redes ad hoc móveis  (MANETs)</li>
+      <li>Redes ad hoc veiculares (VANETs)</li>
+      <li>Redes ad hoc de smartphone (SPANs)</li>
+      <li>Redes de malha sem fio</li>
+      <li>Aplicações militares</li>
+      <li>Redes de sensores sem fio</li>
+      <li>Ad hoc para Iluminação inteligente de casas</li>
+      <li>Rede ad hoc de resgate em desastres</li>
+      <li>Rede ad hoc para hospitais</li>
+      </ul>
+      <h3>
+        Classificações
+      </h3>
+      <p class="lead">
+        <strong>Protocolos proativos de roteamento</strong><br />
+        Os protocolos de roteamento proativo também são chamados de protocolos de roteamento acionados por tabela. Neste, todos os nós mantêm a tabela de roteamento que contém informações sobre a topologia de rede, mesmo sem a necessidade.
+        <br /><br />Protocolos de roteamento reativo<br />
+        O protocolo de roteamento reativo também é conhecido como protocolo de roteamento sob demanda. Nesse protocolo, a rota é descoberta ou criada sempre que necessário.
+        Descoberta de rota: nesta fase, o nó de origem inicia o processo de descoberta de rota. O nó de origem inclui o endereço de destino, nós intermediários para o destino no pacote.
+        Manutenção de rota: devido à falha na rota entre os nós, que ocorre devido à quebra do link. Portanto, a manutenção da rota é feita por mecanismo de reconhecimento.
+        <br /><br />Protocolo de roteamento híbrido<br />
+        Protocolo de roteamento híbrido é a combinação de protocolos de roteamento proativo e reativo.
+
+      </p>
+      <h3>
+        Vantagens e  Desafios
+      </h3>
+      <p class="lead">
+        A idéia de uma rede ad hoc geralmente não é familiar para os usuários finais que só viram pequenas redes residenciais ou comerciais que usam um roteador típico para enviar sinais sem fio para computadores individuais. No entanto, a rede ad hoc está sendo usada bastante em novos tipos de engenharia sem fio, embora até recentemente fosse uma idéia bastante esotérica. Por exemplo, uma rede móvel ad hoc envolve dispositivos móveis se comunicando diretamente entre si. Outro tipo de rede ad hoc, a rede veicular ad hoc, envolve a colocação de dispositivos de comunicação nos carros. Ambos são exemplos de redes ad hoc que usam uma grande coleção de dispositivos individuais para se comunicar livremente sem um tipo de estrutura de comunicação hierárquica ou de cima para baixo.
+        <br />
+        Vantagens para os usuários: Rede de alto desempenho. Nenhuma infraestrutura cara deve ser instalada. Distribuição rápida de informações pelo remetente. Nenhum ponto único de falha. Escalabilidade e restrições de bateria.
+        <br />
+        Porém, devido a sua natureza descentralizada e de topologia dinâmica, aparecem alguns problemas tanto na implementação quanto na utilização do protocolo.
+        <br />
+        Dificuldades de implementação: Todas as entidades de rede podem ser móveis, portanto, é necessária uma topologia muito dinâmica. As funções de rede devem ter um alto grau de adaptabilidade. Não há entidades centrais, portanto, as operações devem ser gerenciadas de maneira completamente distribuída.
+        Como efeitos colaterais, o uso de espectro de frequência não licenciado, contribuindo para a poluição do espectro radioelétrico. Interferência. 
+        
+      </p>
+            
     </div>
 
-    <!-- Principais protocolos: --> 
+  <!-- Principais protocolos: --> 
 
     <hr class="my-4" id="protocolos">
     <div class="container content">
-        <h1 class="display-4 title">Protocolos</h1>
-        <h3>Protocolos proativos de roteamento</h3>
+        <h3>
+          DSDV (Destination-Sequenced Distance-Vector Routing)
+        </h3>
         <p class="lead">
-          Os protocolos de roteamento proativo também são chamados de protocolos de roteamento acionados por tabela. Neste, todos os nós mantêm a tabela de roteamento que contém informações sobre a topologia de rede, mesmo sem a necessidade.
-        </p>
-        <li class="h5">Protocolo de roteamento vetor de distância de sequência de destino dinâmico (DSDV)</li>
-        <p class="lead">
-          É um aprimoramento do roteamento de vetor de distância para redes ad hoc. Este protocolo consiste em dois fatores que são numeração de sequência e amortecimento.<br /><br />
+          Destination sequenced distance vector(DSDV) - ou Vetor de distância sequenciada de destino em tradução livre - é um protocolo pró-ativo adaptado do RIP(Routing Information Protocol) para o cenário de redes Ad Hoc onde a topologia está em constante mudança. Adicionando um atributo número de sequência para cada entrada da tabela de roteamento convencional do RIP. 
+          <br />O número de sequência (Sequence numbering) é utilizado para comparar as informações recebidas sobre a rede e distinguir informações obsoletas das novas e assim evitar problemas na rede como formação de loops. 
+          <br />Amortecimento (Damping): significa anunciar. Cada nó deve anunciar sua tabela de roteamento para seus vizinhos atuais por broadcasting. Os nós vizinhos sabem que há alterações na rede pelo Damping. As atualizações de roteamento são enviadas de duas maneiras: despejo completo e incremental. O despejo completo a tabela completa é enviada aos vizinhos. E o chamado incrementais somente as entradas são enviadas aos vizinhos.
+          <br /><br />
+          Seleção de Rota
+          <br />Se um roteador recebe novas informações, ele usa o número de sequência mais recente. Se o número de sequência for o mesmo que o da tabela, a rota com a melhor métrica será usada. Entradas obsoletas são aquelas que não são atualizadas há um tempo. Essas entradas, bem como as rotas que usam esses nós como próximos saltos, são excluídas.
+          <br /><br />
+          Vantagens:
+          <br />A disponibilidade de caminhos para todos os destinos na rede resulta em menos atraso necessário no processo de configuração do caminho.
+          O método de atualização incremental com etiquetas de número de sequência marca os protocolos de rede com fio existentes adaptáveis às redes sem fio Ad-hoc. Portanto, todo protocolo de rede com fio disponível pode ser útil para redes sem fio ad hoc com menos modificações.
+          <br /><br />
+          Desvantagens:
+          <br />O DSDV requer atualizações regulares de suas tabelas de roteamento, que consomem energia da bateria e uma pequena quantidade de largura de banda, mesmo quando a rede está ociosa. 
+          <br />Sempre que a topologia da rede é alterada, é necessário um novo número de sequência antes da convergência da rede; portanto, o DSDV não é adequado para redes altamente dinâmicas ou em larga escala. 
 
-          Numeração de sequência (Sequence numbering): cada nó da rede mantém uma tabela de roteamento. A tabela de roteamento contém uma lista de todas as fontes e destinos disponíveis e os caminhos possíveis. Cada entrada na tabela é diferente pelo número de sequência para evitar loops e inconsistências. <br />
-
-          Amortecimento (Damping): significa anunciar. Cada nó deve anunciar sua tabela de roteamento para seus vizinhos atuais por broadcasting???(COMO TRADUZIR). Os nós vizinhos sabem que há alterações na rede pelo Damping. As atualizações de roteamento são enviadas de duas maneiras: despejo completo e incremental. O despejo completo a tabela completa é enviada aos vizinhos. E o chamado incrementais somente as entradas são enviadas aos vizinhos.
         </p>
-        <li class="h5">Protocolo de roteamento sem fio (WRP)</li>
+        <h3>
+          WRP (Wireless Routing Protocol)
+        </h3>
         <p class="lead">
-          O WRP é um protocolo de roteamento proativo, pois mantém quatro itens que são: 1) Uma tabela de distância 2) Uma tabela de roteamento 3) Uma tabela de custo de link 4) Uma lista de transmissão de mensagens (MRL) para evitar um loop de roteamento temporário. <br />
+          O WRP é um protocolo para rede de rádio por pacote que utiliza um algoritmo para descobrir caminhos, não um algoritmo de caminhos mínimos que podem gerar problema de contagem até o infinito. 
+          <br />Esse protocolo é proativo, pois mantém quatro itens que são:
+          <br />1) Uma tabela de distância 
+          <br />2) Uma tabela de roteamento 
+          <br />3) Uma tabela de custo de link 
+          <br />4) Uma lista de transmissão de mensagens (MRL) para evitar um loop de roteamento temporário.
+          <br /><br />
           O WRP usa a transmissão de mensagens de atualização para os nós vizinhos. Se o nó tiver atualização, deve enviar confirmações. Se o nó não tiver alterações na última atualização, envie um hello ocioso para garantir a conectividade. Um nó decide apenas se deseja atualizar ou não após receber a mensagem de atualização do vizinho. Este protocolo também procura o melhor caminho. Se um nó obtiver o melhor caminho, retransmitir essas informações para os nós originais. Depois que o nó original recebe uma confirmação, ele atualiza seu MRL.
-        </p>
-        <h3>Protocolos de roteamento reativo</h3>
-        <p class="lead">
-          O protocolo de roteamento reativo também é conhecido como protocolo de roteamento sob demanda. Nesse protocolo, a rota é descoberta ou criada sempre que necessário. <br />
+          <br /><br />
+          Sua vantagem é o não acontecimento da contagem até o infinito, algo que pode acontecer em um algoritmo para achar o caminho mínimo como Bellman-Ford.
+          <br /><br />
+          Sua desvantagem é complexidade para manter múltiplas tabelas demandando mais memória e processamento dos nós da rede(em comparação ao DSDV). Dessa forma o protocolo não é apropriado para grandes redes móveis, por serem altamente dinâmicas. 
 
-          Descoberta de rota: nesta fase, o nó de origem inicia o processo de descoberta de rota. O nó de origem inclui o endereço de destino, nós intermediários para o destino no pacote.<br />
+        </p>
+        <h3>
+          OLSR (Optimized Link State Routing Protocol)
+        </h3>
+        <p class="lead">
 
-          Manutenção de rota: devido à falha na rota entre os nós, que ocorre devido à quebra do link. Portanto, a manutenção da rota é feita por mecanismo de reconhecimento.
         </p>
-        <li class="h5">Roteamento Dinâmico de Origem (DSR)</li>
+        <h3>
+          AODV (Ad hoc On-Demand Distance Vector Routing)
+        </h3>
         <p class="lead">
-          O DSR é um protocolo reativo para iniciar o processo de descoberta de rotas por fonte. O nó de origem decide apenas a rota da origem para o destino e os nós intermediários também. É um protocolo sem farol no qual nenhuma mensagem HELLO é trocada entre nós para notificá-los de seus vizinhos na rede [1].
-        </p>
-        <li class="h5">Roteamento Ad Hoc Sob Demanda Vetor de Distância (AODV)</li>
-        <p class="lead">
-          O AODV é um protocolo reativo e é uma melhoria do DSDV em vez do protocolo proativo. No AODV, se o nó que deseja uma conexão transmite uma solicitação (RREQ).
+          O protocolo AODV, On-Demand Distance Vector, tem como objetivo ser leve e adaptativo, utilizando menos banda e espaço e minimizando o processamento nos nós a partir da realização de menos cálculos no algoritmo. Dessa forma, o protocolo se mostra um ótimo candidatos para dispositivos móveis por suas economias.
+          <br /><br />
+          O AODV consegue realizar roteamento uni e multicast  e é um protocolo reativo, sendo considerado uma combinação do DSR e do DSDV. Sua principal diferença para o DSR é o fato dos saltos da rota serem descobertas a partir dos nós intermediários que escolhem o endereço do próximo salto, característica do DSDV, que diferencia do DSR por este guardar todos os saltos em sua tabela. Dessa forma, o protocolo consegue diminuir a sobrecarga da redes pois cada nó não precisa ter a tabela contendo todo o caminho até o nó, além de realizar o descobrimento da rede sob demanda a partir da manutenção da rota e do descobrimento da rota.
+          <br /><br />
+          No AODV, se o nó que deseja uma conexão transmite uma solicitação (RREQ). O nó de origem transmite um RREQ pela rede como o processo de descoberta de rota. Se um nó de destino receber RREQ, ele enviará uma resposta de rota (RREP). Se, em caso de falha, retransmitir o RREQ. Se o nó descartar RREQ que já possuía.
 
-          O nó de origem transmite um RREQ pela rede como o processo de descoberta de rota. Se um nó de destino receber RREQ, ele enviará uma resposta de rota (RREP). Se, em caso de falha, retransmitir o RREQ. Se o nó descartar RREQ que já possuía. A principal diferença entre DSR e AODV, o DSR, usa o roteamento iniciado pela origem e não possui nós intermediários para escolher o endereço do próximo salto. No AODV, os nós intermediários escolherão o endereço do próximo salto.
         </p>
-        <h3>Protocolo de roteamento híbrido</h3>
+        <h3>
+          DSR (Dynamic Source Routing)
+        </h3>
         <p class="lead">
-          Protocolo de roteamento híbrido é a combinação de protocolos de roteamento proativo e reativo.
-        </p>
-        <li class="h5"> Protocolo de Roteamento de Região (ZRP)</li>
-        <p class="lead">
-          É mais adequado para grandes extensões e diversos padrões de mobilidade. No ZRP, zona de roteamento significa que cada nó na rede mantém proativamente mantém rotas dentro de uma região local. O mecanismo QUERY-REPLY é usado para criação de rota. Se for o destino de um pacote na mesma zona, a tabela de roteamento já armazenada será usada imediatamente pelo protocolo proativo. Se for o destino de um pacote em outra zona, um roteamento é feito por protocolo reativo. Simplesmente, se o destino cair na mesma região, o protocolo proativo será usado. Se o destino cair em uma região diferente, o protocolo reativo será usado. As informações de descoberta de vizinhos são usadas como base para o IARP (Intra-zone Routing Protocol).
-        </p>
-        <li class="h5"> Protocolo de Roteamento Adaptativo Híbrido Sharp (SHARP)</li>
-        <p class="lead">
-          O SHARP se adapta entre o roteamento reativo e proativo, variando dinamicamente a quantidade de informações de roteamento compartilhadas proativamente. A zona proativa consiste no nó determinado pelo raio da zona para se tornar esses nós membros de uma zona proativa específica. Para descobrir uma rota quando não há destino dentro da zona proativa por protocolo reativo. As zonas proativas atuam como coletores de pacotes, que encaminham os pacotes de maneira eficiente para o destino, uma vez que os pacotes atingem qualquer nó na vizinhança da zona.
-        </p>
+          O DSR é um protocolo reativo para iniciar o processo de descoberta de rotas por fonte. O nó de origem decide apenas a rota da origem para o destino e os nós intermediários também. É um protocolo sem aviso no qual nenhuma mensagem HELLO é trocada entre nós para notificá-los de seus vizinhos na rede. O Protocolo foi pensando para ter pouca sobrecarga de processamento e ainda assim reagir de forma rápidas as mudanças na topologia da rede, além de não se utiliza de pacotes periódicos como outros protocolos. O DSR fornece alta reatividade para ajudar a segurar a entrada dos pacotes apesar da movimentação dos nós e outra mudanças na rede. 
+          <br /><br />
+          Para conseguir garantir o funcionamento do protocolo ele é composto de dois mecânicos que possibilitam o descobrimento e a manutenção de rotas na rede, o descobrimento de rota e a manutenção de rota.
+          <br /><br />
+          O descobrimento de rota é o mecanismo usando quando um nó A nao conhece caminho para o nó B e dessa forma A precisar obter essa rota. Enquanto que a manutenção da rota é usada quando o nó A está enviando pacotes para o nó B e acontece alguma modificação da topologia de forma que a rota inicial não funciona mais, nessa situação A pode usar outra rota que conhece D ou rodar novamente o descobrimento de Rota.
+          <br /><br />
+          Os dois mecanismos acontecem sob-demanda, esse fato somado a não utilização de envios de pacotes intermediários possibilita que o overhead de pacotes tenda  a zero nas situações onde todos os nós são aproximadamente estacionários entre si e todas as rotas que são necessárias para comunicação já foram descobertas. 
+          <br /><br />
+          À medida que os nós começam a se mover e a comunicação dos pacotes mudam, a sobrecarga dos pacotes de roteamento escalam automaticamente somente para o que é necessário para as conexões em uso. As mudanças na topologia da rede não afetam o protocolo em casos que essas modificações não afetem as conexões em uso.
 
-        <li class="h5">Intermediate System to Intermediate System (IS-IS)</li>
-        <p class="lead">
-          NÂO SEI EM QUAL ENTRA, e falta escrever https://en.wikipedia.org/wiki/IS-IS
         </p>
-        <li class="h5">Optimized Link State Routing Protocol (OLSR)</li>
+        <h3>
+          ZRP (Zone Routing Protocol)
+        </h3>
         <p class="lead">
-          NÂO SEI EM QUAL ENTRA, e falta escrever https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol
+          O protocolo ZRP é um protocolo híbrido que possui parte proativa e parte reativa, sendo desenvolvido para acelerar o envio e diminuir a sobrecarga de processamento selecionando a forma mais eficiente de roteamento pela rede.
+          <br /><br />
+          O ZRP define o conceito de zona de roteamento sendo uma área A de um nó N é definido sendo a menor distância em saltos de um nó N a todos os nós da Área A respeitando o máximo definido que é definido como o Raio de Zona. Essa área pode ser variável dentro do protocolo podendo ser manualmente definida em casos de uma rede com poucas modificações. Dentro dessa área é utilizado um protocolo pró-ativo para guardar uma tabela com os caminhos para os nós da Zona. 
+          <br /><br />
+          No caso do destino estar fora da zona do nó A, um protocolo reativo valida as zonas vizinhas se o destino está dentro dessas zonas e assim que o destino é encontrado,  é realizado o protocolo pró-ativo dentro da zona do destino ou é utilizado a rota armazenada da tabela daquela zona.
+          <br /><br />
+          Dessa forma, o protocolo diminui o atraso causado pelo processo de descoberta de rota dos protocolos reativos e diminui a sobrecarga de processamento realizados o algoritmo para definir a tabela da rota em uma pequena área apenas. 
+          <br /><br />
+          O tamanho da zona pode ser definido dinamicamente ou manualmente, o melhor tamanho de zona a ser escolhido vai depender das características da rede, sendo uma rede esparsa ou dena e se ela se move rápido ou lentamente.
+
         </p>
     </div>
 
   <!-- Considerações Finais --> 
 
-<hr class="my-4" id="conclusoes">
+  <hr class="my-4" id="conclusoes">
     <div class="container content">
       <h1 class="display-4 title">Considerações Finais</h1>
+      <p class="lead">
+        Para pequenas redes de área local, as redes ad hoc podem ser mais baratas de serem construídas porque não exigem tanto hardware. No entanto, pode ser difícil gerenciar um grande número de dispositivos sem uma infraestrutura maior e mais concreta. Além de que o protocolo reativo demanda muito tempo para determinar a rota, o proativo ocupa espaço na banda durante a troca de informações além de necessitar de processamento e memória do dispositivo móvel. Apenas observando essas grandes desvantagens entre as duas principais classificações de protocolos é possível perceber que existe muito a ser estudado e trabalhado. Grupos de pesquisa estão procurando maneiras de habilitar funcionalidades de rede mais animadoras com essas redes ponto a ponto.
+      </p>
     </div>
 
       <!-- Perguntas --> 
@@ -241,7 +245,26 @@
   <hr class="my-4" id="perguntas">
   <div class="container content">
       <h1 class="display-4 title">Perguntas</h1>
-
+      <h3>1) O que são redes Ad Hoc?</h3>
+      <p class="lead">
+        São redes descentralizadas onde não é necessária uma infra-estrutura de comunicações definida. São composta por dispositivos individuais que se comunicam diretamente. O termo implica construção espontânea ou improvisada.
+      </p>
+      <h3>2) O que são protocolos proativos? Cite ao menos uma vantagem.</h3>
+      <p class="lead">
+        Nos protocolos proativos, são enviadas informações sobre a topologia da rede em intervalos fixos de tempo, com o objetivo de manter as tabelas de roteamento atualizadas. Não há atraso na descoberta de rotas.
+      </p>
+      <h3>3) O que são protocolos reativos? Cite ao menos uma vantagem.</h3>
+      <p class="lead">
+        Nos protocolos reativos, uma rota até um determinado destino será descoberta apenas quando requisitada e esta não constar na tabela de roteamento atual. Menor quantidade de informação armazenada, dependendo da rede pode ter menos troca de mensagens de controle, possível menor gasto de energia. 
+      </p>
+      <h3>4) Para que server retransmissores multiponto (MPR) no protocolo OLSR?</h3>
+      <p class="lead">
+        A idéia dos retransmissores multiponto é minimizar a sobrecarga das mensagens de inundação na rede, reduzindo as retransmissões redundantes na mesma região. Cada nó na rede seleciona um conjunto de nós em sua vizinhança simétrica de 1 salto, que pode retransmitir suas mensagens.
+      </p>
+      <h3>5) Para que servem os números de seqüência implementados no protocolo DSDV?</h3>
+      <p class="lead">
+        É utilizado para comparar as informações recebidas sobre a rede e distinguir informações obsoletas das novas e assim evitar problemas na rede como formação de loops.
+      </p>
   </div>
 
 
